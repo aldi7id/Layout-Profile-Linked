@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--    <Button-->
+        <!--        android:id="@+id/btn_biru"-->
+        <!--        android:layout_width="128dp"-->
+        <!--        android:layout_height="64dp"-->
+        <!--        android:text="Button 1"-->
+        <!--        app:layout_constraintBottom_toBottomOf="@id/btn_biru"-->
+        <!--        app:layout_constraintEnd_toEndOf="@id/btn_biru"-->
+        <!--        app:layout_constraintStart_toEndOf="@id/btn_biru"-->
+        <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--    <Button-->
+        <!--        android:id="@+id/btn_ungu"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:backgroundTint="@color/ungu_binar"-->
+        <!--        android:text="Button 2"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="parent" />-->
+        <!--Guidlane-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".30" />
+        <!--EditText Searcg-->
+        <EditText
+            android:id="@+id/EtSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/icon_sarch"
+            android:hint="@string/search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="Cahya Atalia Agnesza"
+            android:inputType="textPersonName" />
+        <!--Arrow Button-->
+        <ImageButton
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_backspace_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:backgroundTint="#00FFFFFF"
+            android:contentDescription="@string/arrow" />
+        <!--Notif-->
+        <ImageButton
+            android:id="@+id/notif"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_icon_alert"
+            android:backgroundTint="#00FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline_header"
+            android:contentDescription="@string/notif" />
+        <!--Header Photo-->
+        <ImageView
+            android:id="@+id/photo_header"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo_header"
+            app:layout_constraintBottom_toTopOf="@id/guideline_header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/arrow"
+            app:layout_constraintVertical_bias="0.0"
+            android:contentDescription="@string/photo_header" />
+        <!--Photo Profile-->
+        <ImageView
+            android:id="@+id/photo_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photo_profile"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline_header"
+            android:contentDescription="@string/photo_profile" />
+        <!--Name-->
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="@string/name"
+            app:layout_constraintStart_toStartOf="@+id/photo_profile"
+            app:layout_constraintTop_toBottomOf="@+id/photo_profile"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textSize="23sp"
+            android:fontFamily="sans-serif-black" />
+        <!--1st-->
+        <TextView
+            android:id="@+id/firstst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/firstst"
+            app:layout_constraintBottom_toBottomOf="@+id/name"
+            app:layout_constraintStart_toEndOf="@+id/name"
+            app:layout_constraintTop_toTopOf="@+id/name" />
+        <!--Desc-->
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="@string/desc"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp" />
+        <!--Tag-->
+        <TextView
+            android:id="@+id/tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tag"
+            app:layout_constraintStart_toStartOf="@+id/desc"
+            app:layout_constraintTop_toBottomOf="@+id/desc"
+            android:layout_marginTop="10dp"
+            android:textSize="17sp" />
+        <!--Work Name-->
+        <TextView
+            android:id="@+id/binar_academy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/binar"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tag"
+            app:layout_constraintTop_toBottomOf="@+id/tag"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+        <!--Work Location-->
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            app:layout_constraintStart_toStartOf="@+id/binar_academy"
+            app:layout_constraintTop_toBottomOf="@+id/binar_academy"
+            android:textSize="17sp" />
+        <!--Followers Count-->
+        <TextView
+            android:id="@+id/followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/followers_count"
+            app:layout_constraintStart_toStartOf="@+id/location"
+            app:layout_constraintTop_toBottomOf="@+id/location"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+        <!--Followers Text-->
+        <TextView
+            android:id="@+id/followers_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/followers"
+            app:layout_constraintBottom_toBottomOf="@+id/followers"
+            app:layout_constraintStart_toEndOf="@+id/followers"
+            app:layout_constraintTop_toTopOf="@+id/followers" />
+        <!--Connection Count-->
+        <TextView
+            android:id="@+id/connection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connection"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"
+            app:layout_constraintBottom_toBottomOf="@+id/followers_text"
+            app:layout_constraintStart_toEndOf="@+id/followers_text"
+            app:layout_constraintTop_toTopOf="@+id/followers_text" />
+        <!--Person Mutual First-->
+        <ImageView
+            android:id="@+id/personfirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person_first"
+            app:layout_constraintStart_toStartOf="@+id/followers"
+            app:layout_constraintTop_toBottomOf="@+id/followers" />
+        <!--Person Mutual Second-->
+        <ImageView
+            android:id="@+id/personsecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person_second"
+            app:layout_constraintBottom_toBottomOf="@+id/personfirst"
+            app:layout_constraintStart_toEndOf="@+id/personfirst"
+            app:layout_constraintTop_toTopOf="@+id/personfirst"
+            app:layout_constraintEnd_toEndOf="@id/personfirst" />
+        <!--Person Mutual First-->
+        <TextView
+            android:id="@+id/mutualconnection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/mutual_connection"
+            app:layout_constraintBottom_toBottomOf="@+id/personsecond"
+            app:layout_constraintStart_toEndOf="@+id/personsecond"
+            app:layout_constraintTop_toTopOf="@+id/personsecond"
+            app:layout_constraintVertical_bias="0.0" />
+        <!--Button Massage-->
+        <Button
+            android:id="@+id/message"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button"
+            android:text="@string/message"
+            android:backgroundTint="@null"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:cornerRadius="20dp"
+            app:layout_constraintStart_toStartOf="@+id/personfirst"
+            app:layout_constraintTop_toBottomOf="@+id/personfirst"
+            app:layout_constraintWidth_percent=".80" />
+        <!--Button More-->
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button"
+            android:src="@drawable/more"
+            app:layout_constraintBottom_toBottomOf="@+id/message"
+            app:layout_constraintStart_toEndOf="@+id/message"
+            app:layout_constraintTop_toTopOf="@+id/message"
+            app:layout_constraintWidth_percent=".20"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <!--Hiring-->
+        <TextView
+            android:id="@+id/tvHiring"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_second"
+            android:padding="5dp"
+            android:text="@string/hiring"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/message"
+            app:layout_constraintTop_toBottomOf="@+id/message" />
+        <!--Pembatas-->
+        <TextView
+            android:id="@+id/padding"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/tvHiring"
+            app:layout_constraintTop_toBottomOf="@+id/tvHiring"
+            android:background="@drawable/padding" />
+        <!--Highligt-->
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/highligt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/padding"
+            app:layout_constraintTop_toBottomOf="@+id/padding"
+            android:text="@string/highlight"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <!--Binar Image-->
+        <ImageView
+            android:id="@+id/binarimage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/highligt"
+            app:layout_constraintTop_toBottomOf="@+id/highligt"
+            android:src="@drawable/binar" />
+        <!--Binar Massage-->
+        <TextView
+            android:layout_marginStart="10dp"
+            android:id="@+id/tv_binar"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/binar_text"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/binarimage"
+            app:layout_constraintStart_toEndOf="@+id/binarimage"
+            app:layout_constraintTop_toTopOf="@+id/binarimage" />
+        <!--Button Massage-->
+        <Button
+            android:id="@+id/message_second"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/message"
+            app:layout_constraintStart_toStartOf="@+id/tv_binar"
+            app:layout_constraintTop_toBottomOf="@+id/tv_binar"
+            android:textAllCaps="false"
+            android:background="@drawable/massage"
+            android:textColor="@color/black" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

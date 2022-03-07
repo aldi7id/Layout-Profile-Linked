@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Latiha Satu</string>
+    <string name="input_email">Input Email</string>
+    <string name="text_login">login</string>
+    <string name="hello_binar">Hello Binar!</string>
+    <string name="image_button">Image Button</string>
+    <string name="mutual_connection"><b>370 mutual Connection:</b> Dr.Pratama Pershada \n Norman Santoso 350 Other</string>
+    <string name="hiring"><b> Hiring a Business Analyst &amp; 1 other </b> \n Binar Academy Jakarta . 300 days ago \n <a href="" >View both jobs</a>
+    </string>
+    <string name="binar_text"><b>You both work at Binar Academy</b> \n Alamanda started at Binar Academy 3 years before \n you did</string>
+    <string name="desc">Tahukah kamu siapa orang yang sangat menyanyangi dirimu meskipun kamu tidak mengetahuinya?</string>
+    <string name="firstst">· 1st</string>
+    <string name="search">Pencarian</string>
+    <string name="arrow">arrow</string>
+    <string name="notif">notif</string>
+    <string name="photo_header">photo header</string>
+    <string name="photo_profile">photo profile</string>
+    <string name="name">Cahya Atalia Agnesza</string>
+    <string name="tag">Talks to #akucantik #akubisa</string>
+    <string name="binar">Binar Academy</string>
+    <string name="location">Jakarta, Jakarta, Indonesia</string>
+    <string name="followers_count">24,343</string>
+    <string name="followers"> followers ·</string>
+    <string name="connection">500+ Connection</string>
+    <string name="message">Message</string>
+    <string name="highlight">Highlight</string>
+
+    <string-array name="list_spinner">
+        <item>Kucing</item>
+        <item>Anjing</item>
+        <item>Babi</item>
+    </string-array>
+</resources>
